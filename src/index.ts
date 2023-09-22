@@ -280,8 +280,8 @@ app.get('/centres', (req, res) => {
         res.sendStatus(500).send(err)
     })
   });
-const url="mongodb://localhost:27017/vectis";
-mongoose.connect('mongodb://localhost/vectis')
+const url="mongodb+srv://soufianerespect21:fGT8BXPHHRbr78Xl@cluster0.cu13kap.mongodb.net/?retryWrites=true&w=majority";
+mongoose.connect(url)
   .then(() => {
     console.log('MongoDB connected successfully');
   })
