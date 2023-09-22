@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "npx tsc && node dist/index.js",
+    "start1": "npx tsc && node dist/index.js",
+    "start":"concurrently -n \"TS,Node\" \"npx tsc\" \"nodemon dist/index.js\"",
     "dev": "concurrently -n \"TS,Node\" \"npx tsc\" \"nodemon dist/index.js\""
   },
   "keywords": [],
